@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated page on scroll</title>
+
+<!-- 1.PASTE THIS IN IN HEAD SECTION -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+ <style>
+
+     *{
+         margin: 0;
+         padding:0;
+     }
+     .main{
+position: absolute;
+top: 0;
+left: 0;
+         background: rgba(228, 226, 226, 0.133);
+         width: 100%;
+         height: auto;
+
+     }
+     .main .content{
+
+         width: 800px;
+         height: 300px;
+         background-color: chartreuse;
+      margin: 10px auto;
+     }
+     .main .content1{
+width: 800px;
+height: 300px;
+background-color: red;
+margin: 10px auto;
+}
+.main .content2{
+width: 800px;
+height: 300px;
+background-color: rgb(57, 127, 218);
+margin: 10px auto;
+}
+.main .content3{
+width: 800px;
+height: 300px;
+background-color: rgb(220, 84, 238);
+margin: 10px auto;
+}
+.main .content4{
+width: 800px;
+height: 300px;
+background-color: rgb(38, 230, 236);
+margin: 10px auto;
+}
+.main .content5{
+width: 800px;
+height: 300px;
+background-color: rgb(177, 21, 81);
+margin: 10px auto;
+}
+.main .content6{
+width: 800px;
+height: 300px;
+background-color: rgb(64, 212, 138);
+margin: 10px auto;
+}
+.main .content7{
+width: 800px;
+height: 300px;
+background-color: rgb(211, 125, 185);
+margin: 10px auto;
+}
+.main .content8{
+width: 800px;
+height: 300px;
+background-color: rgb(145, 51, 51);
+margin: 10px auto;
+}
+.main .content9{
+width: 800px;
+height: 300px;
+background-color: rgb(104, 235, 122);
+margin: 10px auto;
+}
+.main .content10{
+width: 800px;
+height: 300px;
+background-color: rgb(28, 57, 58);
+margin: 10px auto;
+}
+.main .content11{
+width: 800px;
+height: 300px;
+background-color: rgb(14, 236, 70);
+margin: 10px auto;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .main{
+    
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .main .content{
+    width: 80%;
+         height: 200px;
+         background-color: chartreuse;
+      margin: 10px auto;
+  }
+  .main .content1{
+    width: 80%;
+         height: 200px;
+       
+      margin: 10px auto;
+  }
+  .main .content2{
+    width: 80%;
+         height: 200px;
+       
+      margin: 10px auto;
+  }
+  .main .content3{
+    width: 80%;
+         height: 200px;
+       
+      margin: 10px auto;
+  }
+  .main .content4{
+    width: 80%;
+         height: 200px;
+       
+      margin: 10px auto;
+  }
+  .main .content5{
+    width: 80%;
+         height: 200px;
+       
+      margin: 10px auto;
+  }
+  .main .content6{
+    width: 80%;
+         height: 200px;
+       
+      margin: 10px auto;
+  }
+  .main .content7{
+    width: 80%;
+         height: 200px;
+       
+      margin: 10px auto;
+  }
+  .main .content8{
+    width: 80%;
+         height: 200px;
+       
+      margin: 10px auto;
+  }
+  .main .content9{
+    width: 80%;
+         height: 200px;
+       
+      margin: 10px auto;
+  }
+  .main .content10{
+    width: 80%;
+         height: 200px;
+       
+      margin: 10px auto;
+  }
+  .main .content11{
+    width: 80%;
+         height: 200px;
+       
+      margin: 10px auto;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <!-- 3.add code in main content divs -->
+        <div class="content" data-aos="fade-in">1</div>
+        <div class="content1"data-aos="fade-down-right">2</div>
+        <div class="content2"data-aos="slide-right">3</div>
+        <div class="content3"data-aos="slide-down">4</div>
+        <div class="content4"data-aos="zoom-in">5</div>
+        <div class="content5"data-aos="zoom-in">6</div>
+        <div class="content6"data-aos="fade-down-left">7</div>
+        <div class="content7"data-aos="fade-down">8</div>
+        <div class="content8"data-aos="linear">9</div>
+        <div class="content9"data-aos="fade-right">10</div>
+        <div class="content10"data-aos="fade-down-right">11</div>
+        <div class="content11"data-aos="zoom-out-right">12</div>
+
+<!-- 4.you can visit this link to get more details of animation -->
+<!--  https://github.com/michalsnik/aos   copy and paste this in broswer-->
+<!-- 5.it recommed to use only fade left and right  -->
+
+    </div>
+
+
+  
+
+    <!-- 2.paste this link down body -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 240,
+        duration: 1000,
+
+    });
+  </script>
+</body>
+</html>
